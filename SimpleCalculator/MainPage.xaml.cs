@@ -279,7 +279,7 @@ namespace SimpleCalculator
             }
             else
             {
-                if (op == 2 && second == 0)
+                if (op == 2 && second.Equals(0))
                 {
                     display.Text = "Error";
                 }
@@ -304,9 +304,11 @@ namespace SimpleCalculator
                         default:
                             break;
                     }
+                    display.Text = result.ToString();
                 }
-                display.Text = result.ToString();
             }
+            first = 0;
+            second = 0;
             isfirst = true;
             isfirstcomma = true;
         }
