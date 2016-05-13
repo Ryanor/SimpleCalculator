@@ -193,7 +193,8 @@
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch"
                 Click="Click_sum"
-                Content="=" />
+                Content="="
+                FontSize="36" />
         <Button x:Name="add"
                 Grid.Row="5"
                 Grid.Column="3"
