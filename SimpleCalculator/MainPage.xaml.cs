@@ -54,14 +54,7 @@ namespace SimpleCalculator
         {
             if (isfirst)
             {
-                int zero;
-                if (!int.TryParse(display.Text, out zero))
-                {
-                    if (zero == 0)
-                    {
-                        display.Text = "0";
-                    }
-                }
+                display.Text = "0";
             }
             else
             {
