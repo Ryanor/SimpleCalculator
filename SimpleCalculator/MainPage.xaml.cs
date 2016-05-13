@@ -41,6 +41,7 @@ namespace SimpleCalculator
             result = 0;
             display.Text = result.ToString();
             isfirst = true;
+            isfirstcomma = true;
 
         }
 
@@ -190,16 +191,19 @@ namespace SimpleCalculator
 
         private void Click_comma(object sender, RoutedEventArgs e)
         {
-            if (isfirst || isfirstcomma)
+            if (isfirst)
             {
                 display.Text = "0,";
                 isfirst = false;
                 isfirstcomma = false;
             }
-            else
+            else if ( isfirstcomma)
             {
                 display.Text = display.Text + ",";
                 isfirstcomma = false;
+            } else
+            {
+                display.Text = display.Text;
             }
         }
 
