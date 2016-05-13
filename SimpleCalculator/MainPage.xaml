@@ -24,9 +24,10 @@
         </Grid.RowDefinitions>
         <TextBox x:Name="display"
                  Grid.ColumnSpan="4"
-                 VerticalAlignment="Top"
+                 VerticalAlignment="Stretch"
                  Background="Black"
-                 FontSize="48"
+                 FontFamily="Segoe UI"
+                 FontSize="72"
                  Foreground="White"
                  Text="0"
                  TextAlignment="Right"
