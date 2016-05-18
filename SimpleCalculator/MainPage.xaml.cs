@@ -281,7 +281,7 @@ namespace SimpleCalculator
             {
                 if (op == 2 && second.Equals(0))
                 {
-                    display.Text = "Error";
+                    display.Text = "Div. by Null";
                 }
                 else
                 {
